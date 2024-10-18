@@ -73,5 +73,5 @@
     2. output total losses to the user
 
 5. otherwise
-    1. ask user to select yes or no
+    1. ask user to select Yes or No
    
