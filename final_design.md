@@ -15,7 +15,7 @@
 
  #   4. While decision == "yes"
     1. output amount of losses from each player to user
-        2. set amount_of_sticks to 0
+        2. set amount_of_sticks to 100
 
     2. While amount_of_sticks > 0
         I. ask player 1 to enter how many sticks they want, store in p1
@@ -32,16 +32,17 @@
             
             d. otherwise if amount_of_sticks > 0
                 i. ask player 2 to enter how many sticks they want, store in p2
-                ii. subtract p2 from amount_of_sticks
-                iii. output sticks left to user
-                iv. if amount of sticks <= 0
+                ii. if p2 = 1, 2, or 3
+                iii. subtract p2 from amount_of_sticks
+                iv. output sticks left to user
+                v. if amount of sticks <= 0
                     a. output to user game over, player 2 loses
                     
                     b.  += 1 to p2_count
         
                     c. output to user total losses
 
-                v. otherwise if amount_of_sticks > 0
+                vi. otherwise if amount_of_sticks > 0
                     a. computer selects random integer, 1, 2, or 3, store under computer
 
                     b. print the computer selected number
@@ -57,7 +58,7 @@
 
                         iii. output to user total loses
 
-                vi. otherwise
+                vii. otherwise
                     output to user to pick a valid number
             
             e. otherwise

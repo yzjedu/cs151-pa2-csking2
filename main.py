@@ -3,6 +3,8 @@
 # # Due Date: October 23rd 2024
 # # Lab Assignment: PA2
 # # Problem Statement:
+
+# import random
 import random
 
 #initialize variables
@@ -18,9 +20,6 @@ amount_of_sticks = 100
 decision = input('Do you want to play the game? Enter Yes or No: ')
 decision = decision.lower()
 
-#imports random module
-import random
-
 while decision == 'yes':
 
     print('\nP1 Losses:', p1_count,  '\nP2 Losses: ', p2_count, '\nComputer Losses:', computer_count)
@@ -28,10 +27,8 @@ while decision == 'yes':
 
     while amount_of_sticks > 0:
 
-
         p1 = input('\nPlayer 1, How many sticks do you want to pick up, 1, 2, or 3? ')
         p1 = int(p1)
-
 
         if p1 == 1 or p1 == 2 or p1 == 3:
             amount_of_sticks = amount_of_sticks - p1
