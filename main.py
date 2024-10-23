@@ -20,6 +20,7 @@ amount_of_sticks = 0
 decision = input('Do you want to play the game? Enter Yes or No: ')
 decision = decision.lower()
 
+#if user wants to play the game
 while decision == 'yes':
     amount_of_sticks = input('Choose number of sticks, 10-100: ')
     amount_of_sticks = int(amount_of_sticks)
@@ -86,9 +87,12 @@ while decision == 'yes':
 
     else:
         print('Error, Try again. ')
+
+#if user does not want to play the game
 if decision == 'no':
     print('\nNo Game Played')
     print('\nTOTAL LOSSES:\nP1 Losses:', p1_count,  '\nP2 Losses: ', p2_count, '\nComputer Losses:', computer_count)
 
+#if user doesn't choose yes or no
 else:
     print('Please select Yes or No')
