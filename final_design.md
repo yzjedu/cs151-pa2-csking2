@@ -14,10 +14,11 @@
 
 
  #   4. While decision == "yes"
-    1. output amount of losses from each player to user
-        2. set amount_of_sticks to 100
-
-    2. While amount_of_sticks > 0
+    1. Ask user to input amount of sticks they want to play with, 10-100
+    2. output amount of losses from each player to user
+        
+    3. if amount_of_of sticks >= 10 and amount_of_sticks <= 100
+      1. While amount_of_sticks > 0
         I. ask player 1 to enter how many sticks they want, store in p1
         
         II. if p1 is 1, 2 or 3
@@ -67,8 +68,8 @@
         III. otherwise
             output to user to pick a valid number
      
-    3. ask user to input if they want to play the game again
-
+      2. ask user to input if they want to play the game again
+    4. otherwise, output invalid number and to try again
 4. if decision == "no"
     1. output that no game is played
     2. output total losses to the user
